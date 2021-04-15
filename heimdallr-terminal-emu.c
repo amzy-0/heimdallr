@@ -48,13 +48,14 @@ static void open_url_firefox(void){
     const char *browser = "firefox ";
     const int len_of_browser = strlen(browser); 
     const int  len_of_entry = gtk_entry_get_text_length(GTK_ENTRY(url_entry)); 
-    const int finally_length = len_of_entry+len_of_browser+1;
+    const int finally_length = len_of_entry+len_of_browser+2;
     char *url_merge_with_brw = (char*)malloc(finally_length*sizeof(char)); 
     g_print("%s <->%s\n", entry, browser);
     strcpy(url_merge_with_brw, browser);
     strcat(url_merge_with_brw, entry);
+    strcat(url_merge_with_brw, "&");
     if( (system(url_merge_with_brw) )!=0){
-        system("notify-send \"firefox command not found !\"");
+        system("notify-send \"firefox command not found !\"&");
     }
     free(url_merge_with_brw);
 
@@ -65,13 +66,14 @@ static void open_url_chrome(void){
     const char *browser = "google-chrome ";
     const int len_of_browser = strlen(browser);
     const int  len_of_entry = gtk_entry_get_text_length(GTK_ENTRY(url_entry));
-    const int finally_length = len_of_entry+len_of_browser+1;
+    const int finally_length = len_of_entry+len_of_browser+2;
     char *url_merge_with_brw = (char*)malloc(finally_length*sizeof(char));
     g_print("%s <-> %s \n", entry, browser);
     strcpy(url_merge_with_brw, browser);
     strcat(url_merge_with_brw, entry);
+    strcat(url_merge_with_brw, "&");
     if( (system(url_merge_with_brw) )!=0){
-        system("notify-send \"google-chrome command not found !\"");
+        system("notify-send \"google-chrome command not found !\"&");
     }
     free(url_merge_with_brw);
 
