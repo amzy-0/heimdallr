@@ -26,6 +26,12 @@ after compile !!!!!!!!!!!!!!!!!!!!!
     $ cd debian
     $ ./preinstallRequirementsDebian.sh
     $ ./install-heimdallr-debian.py
+    
+
+# installation (Manjaro/Arch)
+    $ cd manjaro-Arch
+    $ ./preinstallRequirementsManjaroArch.sh
+    $ ./install-heimdallr-manjaro-Arch.py
 
 
 # installation (Fedora)
