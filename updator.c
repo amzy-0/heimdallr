@@ -7,7 +7,7 @@ int main(void){
     
     //  home address 
     char *home_addr = getenv("HOME");
-    char *heimdallr_addr = "/.heimdallr/";
+    char *heimdallr_addr = "/.heimdallr/makefile";
     
     // finally length of the path (/home/username/.heimdallr)
     // **************************************dinamic opration
