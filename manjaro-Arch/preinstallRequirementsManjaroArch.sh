@@ -1,2 +1,2 @@
-sudo pacman -Syu tk
+sudo pacman -Syu tk pkgconf
 pip install Pillow
