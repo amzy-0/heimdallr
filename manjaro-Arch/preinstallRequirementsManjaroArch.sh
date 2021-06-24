@@ -1,3 +1,4 @@
+#!/bin/bash 
 # Copyright [2021] [M.Amin Azimi .K (amzy-0)]
 # 
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,5 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-sudo pacman -Syu tk pkgconf make pkg-config strip gcc 
+
+sudo pacman -Syu make pkgconf pkg-config tk gcc 
 pip install Pillow

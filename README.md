@@ -30,6 +30,7 @@ after compile !!!!!!!!!!!!!!!!!!!!!
 
 # installation (Manjaro/Arch)
     $ cd manjaro-Arch
+    $ sudo pacman -Syu strip
     $ ./preinstallRequirementsManjaroArch.sh
     $ ./install-heimdallr-manjaro-Arch.py
 

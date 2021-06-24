@@ -29,6 +29,6 @@ all: heimdallr heimdallr-update
 
 heimdallr: ../heimdallr-terminal-emu.c
 		${CC} ../heimdallr-terminal-emu.c ${TERMFLAGS} -o heimdallr
-
+		${SRP} heimdallr
 heimdallr-update: ../updator.c
 		${CC} -o  heimdallr-update ../updator.c
