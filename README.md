@@ -7,7 +7,7 @@ this terminal witten in C and Gtk framework
 because HEIMDALLR must be a SUPER lightweight.
 
 
-SIZE : 23KB :D
+SIZE : 19KB :D
 
 
 after compile !!!!!!!!!!!!!!!!!!!!!
