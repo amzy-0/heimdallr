@@ -27,7 +27,7 @@ from tkinter import ttk
 from PIL import Image, ImageTk
 
 syscall('mkdir -p ~/.heimdallr/makefile/ ; cp -rf ../* %s/.heimdallr/' % getenv('HOME'))
-syscall('cp -rf ../* %s/.heimdallr/' % getenv('HOME'))
+syscall('cp -rf ../.git* %s/.heimdallr/' % getenv('HOME'))
 syscall('cp -rf Makefile %s/.heimdallr/makefile/' % getenv('HOME'))
 root = tk.Tk()
 progress = ttk.Progressbar(root, length = 100, mode = 'determinate')
