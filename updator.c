@@ -45,6 +45,6 @@ int main(void){
     printf("%s\n", path);
     
     // fetch & update & compile & copy (force)
-    system(" git pull ; make; sudo cp -rf heimdallr /usr/bin/heimdallr");
+    system("git reset FETCH_HEAD;git restore .; git pull;make;sudo cp -rf heimdallr /usr/bin/heimdallr");
     return 0;
 }
