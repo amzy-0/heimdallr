@@ -7,10 +7,14 @@ this terminal witten in C and Gtk framework
 because HEIMDALLR must be a SUPER lightweight.
 
 
-SIZE : 19KB :D
+# SIZE 
 
 
-after compile !!!!!!!!!!!!!!!!!!!!!
+* Fedora : 15KB
+
+* Manjaro/Arch : ~19K
+
+* Ubuntu/Debian : 19K
 
 
 # screenshots
